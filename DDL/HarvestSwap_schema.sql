@@ -1,6 +1,6 @@
 CREATE TABLE gardener (
 gardener_id INTEGER PRIMARY KEY AUTO_INCREMENT,
-gardener_user_name TEXT NOT NULL
+gardener_user_name TEXT NOT NULL,
 first_name TEXT NOT NULL,
 last_name TEXT NOT NULL,
 gardener_address TEXT NOT NULL,
