@@ -5,9 +5,9 @@ VALUES (2,'gaurav','Gaurav','Hasija','555 Dobbin Road, Columbia, MD-21045','hasi
 INSERT INTO gardener (gardener_id,gardener_user_name,first_name,last_name,gardener_address,email,gardener_image,gardener_bio,gardener_password)
 VALUES (3,'amar','Amar','Javaid','675 Troy Hills Drive, Catonsville, MD-21044','javaid@gmail.com','','Hi, I am Amar','javaid123');
 INSERT INTO gardener (gardener_id,gardener_user_name,first_name,last_name,gardener_address,email,gardener_image,gardener_bio,gardener_password)
-VALUES (4,'kayla','Kayla','Covington','414 Center Park Drive, Laurel, MD-21039','coington@gmail.com','','Hi, I am Kayla','covington123');
+VALUES (4,'kayla','Kayla','Covington','414 Center Park Drive, Laurel, MD-21039','covington@gmail.com','','Hi, I am Kayla','covington123');
 INSERT INTO gardener (gardener_id,gardener_user_name,first_name,last_name,gardener_address,email,gardener_image,gardener_bio,gardener_password)
-VALUES (5,'devin','Devin','Sparrow','8926 Dorsey Rd, Ellicot City, MD-21025','sparrow@gmail.com','','Hi, I am Dvin','sparrow123');
+VALUES (5,'devin','Devin','Sparrow','8926 Dorsey Rd, Ellicot City, MD-21025','sparrow@gmail.com','','Hi, I am Devin','sparrow123');
 
 
 INSERT INTO harvest (gardener_id,harvest_name,harvest_date,harvest_qty,harvest_description,harvest_image)
