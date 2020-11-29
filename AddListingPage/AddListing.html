@@ -9,26 +9,27 @@
     <div class="container">
             <div class="form">
              <h3>Harvest Swap Website</h3>
-                <form>
-                    <button type="button" class="navbuttons">Welcome</button>
-                    <button type="button" class="navbuttons">How It Works</button>
-                    <button type="button" class="navbuttons">Swap Center</button>
-                    <button type="button" class="navbuttons">Create Account</button>
-                    <button type="button" class="navbuttons">My Profile</button>
-                    <button type="button" class="navbuttons">Login</button><br>
-                    Harvest Type:<input type="text" id="harinfo" size="30"><br>
-                    Harvest Quantity:<input type="text" id="harinfo" size="30"><br>
-                    Link to Photo:<input type="text" id="harinfo" size="30"><br>
-                    Harvest Expiry:<input type="text" id="harinfo" size="30"><br>
-                    <button type="button" id="submitbutton" >Submit</button>
+                <form action="AddListing.php" method="get">
+                    <label for="ID">Gardener ID</label><br>
+                    <input type="text" name="ID"> <br>
+                     <label for="type">Harvest Type</label><br>
+                    <input type="text" name="type"> <br>
+                     <label for="pic">Photo Link</label><br>
+                    <input type="text" name="pic"> <br>
+                     <label for="ddate">Harvest Date</label><br>
+                    <input type="date" name="ddate"> <br>
+                    <label for="quant">Quantity</label><br>
+                    <input type="number" name="quant"> <br>
+                    <label for="descr">Description</label><br>
+                    <input type="text" name="descr"> <br>
+                    <input type="submit" value="Submit">
                 </form>
             </div>
-         <div id="lister">Listings:</div>
         <div id="todos">
             
          </div>
         </div>
-        <script type="text/javascript" src="AddListing.js"></script>
+        
     
 
 </body>
