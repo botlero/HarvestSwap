@@ -32,7 +32,7 @@
       {
 $harvestname = "";
 }
-         $sql = "SELECT * FROM harvest WHERE harvest_name LIKE CONCAT('%', ? , '%')";
+         $sql = "SELECT * FROM harvest join gardener on  gardener.gardener_id = harvest.gardener_id WHERE harvest_name LIKE CONCAT('%', ? , '%')";
 
    $stmt = $conn->prepare($sql);
    
@@ -46,9 +46,9 @@ $harvestname = "";
       echo("<tr>".
         "<td>".$row["harvest_name"]."</td>".
         "<td>".$row["harvest_qty"]."</td>".
-        "<td>".$row["harvest_date"]."</td>"
-       #"<td>".$row["gardener_address"]."</td>".
-       #"<td>".$row["gardener_user_name"]."</td>".
+        "<td>".$row["harvest_date"]."</td>".
+       "<td>".$row["gardener_address"]."</td>".
+       "<td>".$row["gardener_user_name"]."</td>"
       );
      }
 
