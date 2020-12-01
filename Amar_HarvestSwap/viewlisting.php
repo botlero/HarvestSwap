@@ -1,17 +1,6 @@
 <?php
   include('includes/Header.php');
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>PHP Test</title>
-</head>
-<body>
-
- <p  style="height:200px">
-</p>
-
  
  <?php
     $servername = "localhost";
@@ -34,15 +23,13 @@
             echo "Harvest Type: ". $row["harvest_name"]. " <br> <br> <br> Quantity: ". $row["harvest_qty"]. 
             " <br> <br> <br> Description: " . $row["harvest_description"] . "<br> <br> <br> Location: ". $row["gardener_address"].
             "<br> <br> <br> Harvestor: " . $row["first_name"]. "<br> <br> <br> Harvestor Contact: " . $row["email"]. 
-            "<br> <br> <br> Picture of Harvest: ";
+            "<br> <br> <br> Picture of Harvest: <img src='". $row["harvest_image"]."'>";
             
         } 
        
     ?>  
-    <img src="<?php echo $row["harvest_image"]; ?>" />
-    </body>
-    </html>
-    <?php
+    
+      <?php
       include('includes/Footer.php');
     ?>
    
