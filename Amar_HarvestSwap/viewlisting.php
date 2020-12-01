@@ -39,7 +39,7 @@
         } 
        
     ?>  
-    <img src="<?php echo $row["gardener_image"]; ?>" />
+    <img src="<?php echo $row["harvest_image"]; ?>" />
     </body>
     </html>
     <?php
