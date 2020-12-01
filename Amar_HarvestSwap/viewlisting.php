@@ -24,7 +24,7 @@
     } 
   
     $sql = 
-    "SELECT harvest_name, harvest_image, harvest_date, harvest_qty, harvest_description, first_name, last_name, gardener_address,
+    "SELECT harvest_name, harvest_image, harvest_date, harvest_qty, harvest_description, first_name, last_name, gardener_address,gardener_address,
     email FROM harvest join gardener on 
     gardener.gardener_id = harvest.gardener_id Where gardener_user_name = 'amar'";
 
@@ -34,11 +34,12 @@
             echo "Harvest Type: ". $row["harvest_name"]. " <br> <br> <br> Quantity: ". $row["harvest_qty"]. 
             " <br> <br> <br> Description: " . $row["harvest_description"] . "<br> <br> <br> Location: ". $row["gardener_address"].
             "<br> <br> <br> Harvestor: " . $row["first_name"]. "<br> <br> <br> Harvestor Contact: " . $row["email"]. 
-            "<br> <br> <br> Picture of Harvest: " . $row["gardener_image"];
+            "<br> <br> <br> Picture of Harvest: ";
             
         } 
        
     ?>  
+    <img src="<?php echo $row["gardener_image"]; ?>" />
     </body>
     </html>
     <?php
