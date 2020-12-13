@@ -101,7 +101,7 @@ input[type=button], select {
 { 
 ?><input type="button" value="Submit Your Listing" onClick="document.location.href='addlisting.php'" />
 <?php }else {
-  echo("<p style=\"color:red\"> Create account or login to submit your Harvest Listing!</p>");
+  echo("<p style=\"color:red\"> Create account or Login to submit your Harvest Listing!</p>");
 }?>
     
 
