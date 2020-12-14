@@ -126,7 +126,7 @@ input[type=button], select {
 
 echo("<div class=\"alert\">
 <span class=\"closebtn\" onclick=\"this.parentElement.style.display='none';\">&times;</span> 
-<a href=\"createAccount.php\">Create Account</a> or <a href=\"login.php\">login</a>  to Add your Harvest Listing!
+<a href=\"createAccount.php\">Create Account</a> or <a href=\"login.php\">login</a>  to add your harvest listing!
 </div>");
   
 }?>
